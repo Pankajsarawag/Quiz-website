@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Quiz Game</h1>
+			<button id="start-btn">Start Quiz</button>
+		</div>
+        <div class="rules-container">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Read the question carefully before selecting your answer.</li>
+                <li>You have 15 seconds to answer each question.</li>
+                <li>The quiz contains 15 multiple choice questions.</li>
+                <li>Click the "Submit" button to submit your answer and move on to the next question.</li>
+                <li>Once you have answered all the questions, you will receive your final score.</li>
+                <li>Good luck!</li>
+            </ol>
+        </div>
+		<div class="quiz-container hide">
+			<div id="quiz">
+                <div id="question-no"></div>
+				<div id="question"></div>
+				<div id="options"></div>
+			</div>
+			<button id="submit-btn">Submit</button>
+			<div id="feedback" class="hide"></div>
+			<div id="timer" class="hide">Time Remaining: <span id="time-remaining"></span></div>
+			<div id="score" class="hide">Score: <span id="score-value">0</span></div>
+			<div class="progress-bar">
+				<div class="progress"></div>
+			</div>
+		</div>
+		<div class="final-container">
+			<h2>Your Score: <span id="final-score"></span></h2>
+			<button id="retry-btn">Restart</button>
+		</div>
+	</div>
+	<script src="quiz.js"></script>
+</body>
+</html>
